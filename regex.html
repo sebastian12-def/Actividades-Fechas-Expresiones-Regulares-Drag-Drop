@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Expresiones Regulares</title>
+  <link rel="stylesheet" href="css/regex.css" />
+</head>
+<body>
+  <main class="site-main">
+    <section class="card">
+      <h1>Expresiones Regulares</h1>
+      <p class="subtitle">Validar teléfono, URL y contraseña segura.</p>
+
+      <!-- Validar Teléfono -->
+      <form id="form-telefono" class="form-group">
+        <label for="telefono">Teléfono (ej: +57 312-1234567)</label>
+        <div class="input-group">
+          <input type="text" id="telefono" placeholder="+57 312 1234567">
+          <button type="submit">Validar</button>
+        </div>
+        <p id="msg-telefono" class="msg"></p>
+      </form>
+
+      <!-- Validar URL -->
+      <form id="form-url" class="form-group">
+        <label for="url">URL</label>
+        <div class="input-group">
+          <input type="text" id="url" placeholder="https://ejemplo.com/ruta">
+          <button type="submit">Validar</button>
+        </div>
+        <p id="msg-url" class="msg"></p>
+      </form>
+
+      <!-- Validar Contraseña -->
+      <form id="form-pass" class="form-group">
+        <label for="password">Contraseña (mín 8 caracteres, 1 mayúscula, 1 número)</label>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="TuContraseña1">
+          <button type="submit">Validar</button>
+        </div>
+        <p id="msg-pass" class="msg"></p>
+      </form>
+
+      
+      <div class="back-btn-container">
+        <a href="index.html" class="back-btn">⬅ Regresar al inicio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Autor: Sebastián • ADSO: 3064975 - Fechas/RegEx/DragDrop</div>
+  </footer>
+
+  <script src="js/regex.js"></script>
+</body>
+</html>
